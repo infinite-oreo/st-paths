@@ -10,7 +10,7 @@
 #include <string>
 
 
-// グラフを表すクラス Graph
+// Graph class
 class Graph {
 private:
   int const s;
@@ -84,7 +84,7 @@ public:
 
 
 
-// TdZdd で表現すべき部分
+// TdZdd
 class PathZDD {
   tdzdd::DdStructure<2> dd;
   tdzdd::Graph const& tdg;
@@ -143,7 +143,7 @@ public:
 };
 
 
-// 入力ファイルの読み込み
+// Read input file
 Graph readGraph(int argc, char **argv){
   if(argc < 2){
     std::cerr << "Please input a graph file" << std::endl;

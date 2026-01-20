@@ -1,28 +1,28 @@
-# st-paths (s-t パス数え上げ, TdZdd)
+# st-paths (s-t path counting, TdZdd)
 
-## ビルド
-`./tdzdd/include` に TdZdd を配置する前提です。別の場所にある場合は `INCLUDES` を指定してください。
+## Build
+Assumes TdZdd is placed under `./tdzdd/include`. If it is elsewhere, set `INCLUDES`.
 
 ```sh
 make
 ```
 
-例:
+Example:
 
 ```sh
 make INCLUDES=-I/path/to/tdzdd/include
 ```
 
-## 実行
+## Run
 ```sh
 ./path_count grid11x11.grh
 ```
 
-出力は s-t パスの総数のみです。
+The output is only the total number of s-t paths.
 
-## s-t パスをすべて出力（小規模グラフ用）
+## Output all s-t paths (for small graphs)
 ```sh
 ./path_count grid4x4.grh --all
 ```
 
-1 行に 1 つのパスを、頂点番号を空白区切りで出力します。
+Outputs one path per line with vertex numbers separated by spaces.
